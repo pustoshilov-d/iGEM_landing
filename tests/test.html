@@ -1,0 +1,263 @@
+<html class="no-js" lang="en" id="html_to_edit">
+
+    <head>
+
+        
+    <style>
+
+
+
+            
+        nav {
+        font-family: "montserrat-medium", sans-serif;
+        font-size: 14px;
+        position: absolute;
+        top: 0;
+        right: 40px;
+        }
+
+        nav .nav {
+        display: inline-block;
+        list-style: none;
+        height: 72px;
+        margin: 0 1rem 0 0;
+        }
+
+        nav .nav li {
+        display: inline-block;
+        padding-left: 0;
+        margin-right: 1.5rem;
+        }
+
+        nav .nav li li {
+        display: block;
+        padding-left: 0;
+        margin-right: 1.5rem;
+        }
+
+        nav .nav li a {
+        display: block;
+        line-height: 72px;
+        }
+
+        nav .nav li a,
+        nav .nav li a:visited {
+        color: rgba(255, 255, 255, 0.45);
+        }
+
+        nav .nav li a:hover,
+        nav .nav li a:focus {
+        color: #ffffff;
+        }
+
+        nav .nav li.current a {
+        color: #ffffff;
+        }
+
+        nav .nav .cta {
+        height: 3.6rem;
+        line-height: calc(3.6rem - .6rem);
+        padding: 0 1.5rem;
+        font-family: "montserrat-medium", sans-serif;
+        font-size: 14px;
+        text-transform: none;
+        letter-spacing: normal;
+        margin: 0;
+        }
+
+
+
+
+
+
+
+
+        nav {    
+            display: block;
+            text-align: center;
+          }
+          nav ul {
+            margin: 0;
+            padding:0;
+            list-style: none;
+          }
+          .nav a {
+            display:block; 
+            background: #111; 
+            color: #fff; 
+            text-decoration: none;
+            padding: 0.8em 1.8em;
+            text-transform: uppercase;
+            font-size: 80%;
+            letter-spacing: 2px;
+            text-shadow: 0 -1px 0 #000;
+            position: relative;
+          }
+          .nav{  
+            vertical-align: top; 
+            display: inline-block;
+            box-shadow: 
+              1px -1px -1px 1px #000, 
+              -1px 1px -1px 1px #fff, 
+              0 0 6px 3px #fff;
+            border-radius:6px;
+          }
+          .nav li {
+            position: relative;
+          }
+          .nav > li { 
+            float: left; 
+            border-bottom: 4px #aaa solid; 
+            margin-right: 1px; 
+          } 
+          .nav > li > a { 
+            margin-bottom: 1px;
+            box-shadow: inset 0 2em .33em -0.5em #555; 
+          }
+          .nav > li:hover, 
+          .nav > li:hover > a { 
+            border-bottom-color: orange;
+          }
+          .nav li:hover > a { 
+            color:orange; 
+          }
+          .nav > li:first-child { 
+            border-radius: 4px 0 0 4px;
+          } 
+          .nav > li:first-child > a { 
+            border-radius: 4px 0 0 0;
+          }
+          .nav > li:last-child { 
+            border-radius: 0 0 4px 0; 
+            margin-right: 0;
+          } 
+          .nav > li:last-child > a { 
+            border-radius: 0 4px 0 0;
+          }
+          .nav li li a { 
+            margin-top: 1px;
+          }
+
+
+          .nav li a:first-child:nth-last-child(2):before { 
+            content: ""; 
+            position: absolute; 
+            height: 0; 
+            width: 0; 
+            border: 5px solid transparent; 
+            top: 50% ;
+            right:5px;  
+           }
+
+
+            /* submenu positioning*/
+            .nav ul {
+            position: absolute;
+            white-space: nowrap;
+            border-bottom: 5px solid  orange;
+            z-index: 1;
+            left: -99999em;
+            }
+            .nav > li:hover > ul {
+            left: auto;
+            margin-top: 5px;
+            min-width: 100%;
+            }
+            .nav > li li:hover > ul { 
+            left: 100%;
+            margin-left: 1px;
+            top: -1px;
+            }
+            /* arrow hover styling */
+            .nav > li > a:first-child:nth-last-child(2):before { 
+            border-top-color: #aaa; 
+            }
+            .nav > li:hover > a:first-child:nth-last-child(2):before {
+            border: 5px solid transparent; 
+            border-bottom-color: orange; 
+            margin-top:-5px
+            }
+            .nav li li > a:first-child:nth-last-child(2):before {  
+            border-left-color: #aaa; 
+            margin-top: -5px
+            }
+            .nav li li:hover > a:first-child:nth-last-child(2):before {
+            border: 5px solid transparent; 
+            border-right-color: orange;
+            right: 10px; 
+            }
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </style>
+
+
+    </head>
+
+
+
+
+    <body>
+
+        <nav>
+            <ul class="nav">
+              <li><a href="/about">About</a></li>
+              <li><a href="#">Portfolio</a>
+                <ul>
+                  <li><a href="#">item</a></li>
+                  <li><a href="#">item</a></li>
+                  <li><a href="#">item</a></li>
+                  <li><a href="#">item</a></li>
+                </ul>
+              </li>
+              <li><a href="#">Resume</a>
+                <ul>
+                  <li><a href="#">item a lonng submenu</a></li>
+                  <li><a href="#">item</a>
+                    <ul>
+                      <li><a href="#">Ray</a></li>
+                      <li><a href="#">Veronica</a></li>
+                      <li><a href="#">Bushy</a></li>
+                      <li><a href="#">Havoc</a></li>
+                    </ul>
+                  </li>
+                  <li><a href="#">item</a></li>
+                  <li><a href="#">item</a></li>
+                </ul>
+              </li>
+              <li><a href="#">Download</a></li>
+              <li><a href="#">Rants</a>
+                <ul>
+                  <li><a href="#">item</a></li>
+                  <li><a href="#">item</a></li>
+                  <li><a href="#">item</a></li>
+                  <li><a href="#">item</a></li>
+                </ul>
+              </li>
+              <li><a href="#">Contact</a></li>
+            </ul>
+          </nav>
+
+
+
+          <p style="font-size: 0.9rem;font-style: italic;"><img style="display: block;" src="https://live.staticflickr.com/65535/48475349166_e6cf41f0cb_b.jpg" alt="Downtown Moscow"><a href="https://www.flickr.com/photos/95572727@N00/48475349166">"Downtown Moscow"</a><span> by <a href="https://www.flickr.com/photos/95572727@N00">Trey Ratcliff</a></span> is licensed under <a href="https://creativecommons.org/licenses/by-nc-sa/2.0/?ref=ccsearch&atype=html" style="margin-right: 5px;">CC BY-NC-SA 2.0</a><a href="https://creativecommons.org/licenses/by-nc-sa/2.0/?ref=ccsearch&atype=html" target="_blank" rel="noopener noreferrer" style="display: inline-block;white-space: none;margin-top: 2px;margin-left: 3px;height: 22px !important;"><img style="height: inherit;margin-right: 3px;display: inline-block;" src="https://search.creativecommons.org/static/img/cc_icon.svg?image_id=cdd65446-859c-4f07-a4f6-7e2b90175bf7" /><img style="height: inherit;margin-right: 3px;display: inline-block;" src="https://search.creativecommons.org/static/img/cc-by_icon.svg" /><img style="height: inherit;margin-right: 3px;display: inline-block;" src="https://search.creativecommons.org/static/img/cc-nc_icon.svg" /><img style="height: inherit;margin-right: 3px;display: inline-block;" src="https://search.creativecommons.org/static/img/cc-sa_icon.svg" /></a></p>
+
+
+
+          <p style="font-size: 0.9rem;font-style: italic;"><a href="https://www.flickr.com/photos/95572727@N00/48475349166">"Downtown Moscow"</a><span> by <a href="https://www.flickr.com/photos/95572727@N00">Trey Ratcliff</a></span> is licensed under <a href="https://creativecommons.org/licenses/by-nc-sa/2.0/?ref=ccsearch&atype=html" style="margin-right: 5px;">CC BY-NC-SA 2.0</a></p>
+    </body>
+
+
+</html>
+
+
